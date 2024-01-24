@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1 class="adventure">ADVENTURE</h1>
+      <ul class="nav-links">
+        <li id="home"><a href=>Home</a></li>
+        <li><a href=>Tours</a></li>
+        <li><a href=>Explore</a></li>
+        <li><a href=>About</a></li>
+        <li class="btn"><a href="">Contact</a></li>
+      </ul>
+
+      <img class="menu-button" src="./assets/menu.png" alt="">
+    </nav>
+
+
+    <header>
+      <div class="header-content">
+        <h2 class="h">Explore the world with Wings Airlines</h2>
+        <div class="line"></div>
+        <h1>WAIT FOR SURPRISE ON YOUR NEW DESTINATION</h1>
+        <button class="btn">Learn More</button>
+      </div>
+    </header>
+
+
+
+  <script>
+    const menuButton = document.querySelector(".menu-button");
+    const navlinks = document.querySelector(".nav-links");
+
+menuButton.addEventListener("click", () => {
+navlinks.classList.toggle("mobile-menu");
+
+});
+   
+  </script>
+    </body>
+</html>
